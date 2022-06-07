@@ -7,16 +7,17 @@
  */
 int main(void)
 {
-	int i;
-	char c;
-
-	for (i = 0; i < 10; ++i)
+	int n, co;
+	co = 0;
+	
+	while (co < 10)
 	{
-		for (c = 'a'; c <= 'z'; c++)
+		for (n = 'a'; n <= 'z'; n++)
 		{
-			_putchar(c);
+			_putchar(n);
 		}
-		_putchar(c);
+		co++;
+		
+		putchar('\n');
 	}
-	return (0);
 }
