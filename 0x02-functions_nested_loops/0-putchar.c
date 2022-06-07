@@ -3,13 +3,19 @@
 /**
  * main - prints _putchar
  *
- * return: 0 on success
+ * Return: 0 on success.
 */
 int main(void)
 {
-	char ch = "_putchar\n";
+	char c[] = "_putchar";
+	int i;
 
-	write(ch);
+	for (i = 0; i < 8; i++)
+	{
+		_putchar(c[i]);
+	}
 
+	_putchar('\n');
 	return (0);
 }
+
