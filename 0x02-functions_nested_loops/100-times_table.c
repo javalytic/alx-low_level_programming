@@ -14,7 +14,7 @@ void print_times_table(int n)
 
 	while (x <= n)
 	{
-		for (y = 0; y <=n; y++)
+		for (y = 0; y <= n; y++)
 		{
 			z = x * y;
 			if (z > 99)
