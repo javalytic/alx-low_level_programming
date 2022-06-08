@@ -1,5 +1,6 @@
 #include <stdio.h>
 #define LARGEST 10000000000
+
 /**
  * main - main block
  * Description: Find and print the first 98 fib numbers starting with 1 and 2.
@@ -12,7 +13,7 @@ int main(void)
 	unsigned long int hold1, hold2, hold3;
 	int count;
 
-	printf("%lu, %lu", bk1, bk2);
+	printf("%lu, %lu, ", bk1, bk2);
 
 	for (count = 2; count < 98; count++)
 	{
