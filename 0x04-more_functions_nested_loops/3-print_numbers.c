@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_numbers - print the digits 1 - 9
+ * print_numbers - print the digits 1-9
  * Return: 0
  */
 void print_numbers(void)
