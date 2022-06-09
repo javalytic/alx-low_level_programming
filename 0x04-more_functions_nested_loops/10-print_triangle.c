@@ -1,24 +1,32 @@
 #include "main.h"
 /**
- * print_triangle - draws a triagle using multiple terminal lines and #s
- * @size: the height of the triangle
+ * print_triangle - print a triagle
+ *
+ * @size: size of the triagle
+ * Return: void
  */
 void print_triangle(int size)
 {
-	int i, j;
+	int i, j, h;
 
 	if (size > 0)
 	{
-		for (i = 1; i <= size; i++)
+		for (i = 0; i < size; i++)
 		{
-			for (j = size; j >= 1; j--)
+			for (j = size - i; j > 1; j--)
 			{
-				if (i < j)
-					_putchar(' ');
+				_putchar(' ');
+			}
+
+			for (h = 0; h < i + 1; h++)
+			{
+				_putchar('#');
 			}
 			_putchar('\n');
 		}
 	}
 	else
+	{
 		_putchar('\n');
+	}
 }
