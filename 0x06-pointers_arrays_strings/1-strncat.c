@@ -2,6 +2,7 @@
 
 /**
  * _strncat - a function that concatenates two strings
+ *
  * @dest: an input string
  * @src: an input string
  * @n: an input integer
@@ -9,23 +10,19 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int srclen = 0, i = 0;
-	char *temp = dest, *start = src;
+	int coun = 0;
+	int counter = 0;
 
-	while (*src)
+	while (dest[coun] != '\0')
 	{
-		srclen++;
-		src++;
+		coun++;
 	}
 
-	while (*dest)
-		dest++;
-
-	src = start;
-
-	for (; i < n; i++)
-		*dest++ = *src++;
-
-	*dest = '\0';
-	return (temp);
+	while (counter < n && src[counter] != '\0')
+	{
+		dest[coun] = src[counter];
+		coun++;
+		counter++;
+	}
+	return (dest);
 }
