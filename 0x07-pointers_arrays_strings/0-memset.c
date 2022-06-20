@@ -17,7 +17,7 @@ char *_memset(char *s, char b, unsigned int n)
 	{
 		/*s position should raise and overwritte n */
 		s[counter] = b;
-		
+
 		counter++;
 	}
 	return (s);
