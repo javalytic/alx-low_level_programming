@@ -1,8 +1,6 @@
 #include "main.h"
 /**
- * _memset - memset is a function that changes the value of b for another
- * in the frist n bytes
- *
+ * _memset - a function that fills memory with constant bytes
  * @s: pointer to the variabl's adress where is gonna be overwritten with 'b'
  * @b: variable that contains the value to be overwritten in the pointer '*s'
  * the first n bytes
@@ -11,14 +9,12 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int counter = 0;
-	/*while counter is less than n bytes given in main.c*/
-	while (counter < n)
-	{
-		/*s position should raise and overwritte n */
-		s[counter] = b;
+	char *start = s;
 
-		counter++;
+	while (n--)
+	{
+		*s = b;
+		s++;
 	}
-	return (s);
+	return (start);
 }
