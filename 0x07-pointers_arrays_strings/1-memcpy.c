@@ -11,7 +11,7 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int counter = 0;
-	
+
 	while (counter < n)
 	{
 		dest[counter] = *src++;
