@@ -1,28 +1,32 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - It returns the value of square root of n.
- * @n: an input integer
- * Return: The square root of n
+ * comparison - function where the comparison is being done
+ *
+ * @n: value that they give us to get the arithmetic
+ * @i: value that we will find doing the multiplication
+ * Return: recursion and increasing of variable i
  */
-int _sqrt_recursion(int n)
+int comparison(int n, int i)
 {
-	if (n < 0)
+	if (n == (i * i))
+	{
+		return (i);
+	}
+	if (n < (i * i))
+	{
 		return (-1);
-	return (_sqrt(1, n));
+	}
+	return (comparison(n, i + 1));
 }
 
 /**
- * _sqrt - find square root
- * @prev: previous value
- * @root: square root value
- * Return: the square root
+ * _sqrt_recursion - is the function of the square root
+ *
+ * @n: value that they give us to get the root
+ * Return: the result of the recursion in tmp function
  */
-int _sqrt(int prev, int root)
+int _sqrt_recursion(int n)
 {
-	if (prev > root)
-		return (-1);
-	else if (prev * prev == root)
-		return (prev);
-	return (_sqrt(prev + 1, root));
+	return (comparison(n, 1));
 }
