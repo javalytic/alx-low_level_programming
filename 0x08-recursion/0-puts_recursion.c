@@ -3,6 +3,7 @@
 /**
  * _puts_recursion - function to recursively print all string using putchar
  * that just admit 1 character
+ *
  * @s: pointer to the string
  * Return: void
  */
