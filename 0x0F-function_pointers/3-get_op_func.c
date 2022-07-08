@@ -4,6 +4,7 @@
 /**
  * get_op_func - match function
  * @s: operator
+ *
  * Return: if fails NULL
  */
 int (*get_op_func(char *s))(int, int)
@@ -30,4 +31,4 @@ int (*get_op_func(char *s))(int, int)
 	printf("Error\n");
 	exit(99);
 	return (NULL);
-}
+i}
